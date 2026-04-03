@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: 'Datarn - Rust+Python, Go+Python Custom Libraries',
   description: 'Open source platform for Rust+Python and Go+Python custom libraries to enhance Python development',
   keywords: 'rust, python, go, custom libraries, performance, open source',
+  icons: {
+    icon: '/images/datarnlogo.png',
+    apple: '/images/datarnlogo.png',
+  },
 }
 
 export default function RootLayout({
