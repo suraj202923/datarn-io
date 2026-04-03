@@ -1,9 +1,7 @@
 name = "datarn-io"
 type = "javascript"
-account_id = ""
-workers_dev = false
-route = ""
-zone_id = ""
-env = {}
+compatibility_date = "2026-04-03"
 
-# No framework configuration - static site only
+# Static site - no deploy needed, Cloudflare Pages handles it
+[assets]
+directory = "out"
