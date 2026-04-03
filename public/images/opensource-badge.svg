@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Outer seal/badge -->
+  <circle cx="100" cy="100" r="95" stroke="#f97316" stroke-width="3" fill="#fff7ed"/>
+  <circle cx="100" cy="100" r="85" stroke="#f97316" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Inner circle -->
+  <circle cx="100" cy="100" r="70" stroke="#f97316" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Open source lock/key symbol -->
+  <g stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Lock shackle -->
+    <path d="M 70 100 Q 70 75 100 75 Q 130 75 130 100"/>
+    
+    <!-- Lock body -->
+    <rect x="75" y="100" width="50" height="35" rx="4"/>
+    
+    <!-- Keyhole -->
+    <circle cx="100" cy="115" r="6"/>
+    <rect x="98" y="121" width="4" height="8"/>
+  </g>
+  
+  <!-- "OPEN SOURCE" text around the circle -->
+  <defs>
+    <path id="circlePath" d="M 25,100 A 75,75 0 0,1 175,100" fill="none"/>
+  </defs>
+  <text font-family="Arial, sans-serif" font-size="12" font-weight="bold" letter-spacing="1" fill="#f97316" font-variant="small-caps">
+    <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+      Open Source
+    </textPath>
+  </text>
+</svg>
