@@ -11,13 +11,15 @@ export default function Footer() {
           {/* About */}
           <div>
             <div className="flex items-center space-x-2 mb-3 group">
-              <Image
-                src="/images/datarnlogo.png"
-                alt="Datarn Logo"
-                width={32}
-                height={32}
-                className="h-8 w-auto transition-transform group-hover:scale-125 filter drop-shadow-sm"
-              />
+              <div className="w-8 h-8 flex-shrink-0">
+                <Image
+                  src="/images/datarnlogo.png"
+                  alt="Datarn Logo"
+                  width={32}
+                  height={32}
+                  className="w-full h-full transition-transform group-hover:scale-125 filter drop-shadow-sm"
+                />
+              </div>
               <div className="flex flex-col leading-tight">
                 <div className="flex items-baseline gap-1">
                   <h3 className="text-lg font-black bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent">datarn</h3>
@@ -71,13 +73,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-teal-400 transition">
-                  Documentation
-                </a>
+                <Link href="/blog" className="hover:text-teal-400 transition">
+                  Blog
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-teal-400 transition">
-                  Blog
+                <a href="https://github.com/datarn-io/docs" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
+                  Documentation
                 </a>
               </li>
             </ul>
@@ -88,19 +90,24 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <a href="#" className="hover:text-teal-400 transition">
+                <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
                   MIT License
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-teal-400 transition">
+                <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
                   Apache 2.0 License
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-teal-400 transition">
+                <Link href="/privacy" className="hover:text-teal-400 transition">
                   Privacy Policy
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-teal-400 transition">
+                  Terms of Service
+                </Link>
               </li>
             </ul>
           </div>

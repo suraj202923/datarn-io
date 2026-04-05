@@ -53,14 +53,16 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center">
-              <Image
-                src="/images/datarnlogo.png"
-                alt="Datarn Logo"
-                width={400}
-                height={400}
-                priority
-                className="w-full h-auto max-w-sm drop-shadow-lg rounded-lg"
-              />
+              <div className="w-full max-w-sm">
+                <Image
+                  src="/images/datarnlogo.png"
+                  alt="Datarn Logo"
+                  width={400}
+                  height={400}
+                  priority
+                  className="w-full h-auto drop-shadow-lg rounded-lg"
+                />
+              </div>
             </div>
           </div>
         </div>

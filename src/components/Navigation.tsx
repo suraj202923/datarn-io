@@ -15,14 +15,16 @@ export default function Navigation() {
     <nav className="fixed top-0 w-full bg-white shadow-sm z-50">
       <div className="container-width flex justify-between items-center h-16">
         <Link href="/" className="flex items-center space-x-3 group">
-          <Image
-            src="/images/datarnlogo.png"
-            alt="Datarn Logo"
-            width={40}
-            height={40}
-            priority
-            className="h-10 w-auto transition-transform group-hover:scale-110 filter drop-shadow-sm"
-          />
+          <div className="w-10 h-10 flex-shrink-0">
+            <Image
+              src="/images/datarnlogo.png"
+              alt="Datarn Logo"
+              width={40}
+              height={40}
+              priority
+              className="w-full h-full transition-transform group-hover:scale-110 filter drop-shadow-sm"
+            />
+          </div>
           <div className="hidden sm:flex flex-col leading-tight">
             <div className="flex items-baseline gap-1">
               <span className="font-black text-lg bg-gradient-to-r from-teal-600 to-cyan-500 bg-clip-text text-transparent">datarn</span>
@@ -36,6 +38,9 @@ export default function Navigation() {
         <div className="hidden md:flex space-x-8">
           <Link href="/" className="text-slate-700 hover:text-teal-600 transition">
             Home
+          </Link>
+          <Link href="/blog" className="text-slate-700 hover:text-teal-600 transition">
+            Blog
           </Link>
           <Link href="/about" className="text-slate-700 hover:text-teal-600 transition">
             About
@@ -68,6 +73,9 @@ export default function Navigation() {
           <div className="container-width py-4 space-y-4">
             <Link href="/" className="block text-slate-700 hover:text-teal-600 transition">
               Home
+            </Link>
+            <Link href="/blog" className="block text-slate-700 hover:text-teal-600 transition">
+              Blog
             </Link>
             <Link href="/about" className="block text-slate-700 hover:text-teal-600 transition">
               About
