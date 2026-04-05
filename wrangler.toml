@@ -1,7 +1,6 @@
 name = "datarn-io"
-type = "javascript"
 compatibility_date = "2026-04-03"
 
-# Static site - no deploy needed, Cloudflare Pages handles it
-[assets]
-directory = "out"
+# Next.js with Cloudflare Pages
+# Remove assets.directory since Next.js creates .next folder with SSR support
+# Use Cloudflare Pages deployment instead of Wrangler Workers
