@@ -1,18 +1,10 @@
-# Cloudflare Pages Configuration
-# This configuration is for Cloudflare Pages, NOT Wrangler/Workers
-# Do NOT use 'wrangler deploy' - use Cloudflare Pages web UI instead
-
 name = "datarn-website"
+pages_build_output_dir = ".next"
+compatibility_date = "2026-04-05"
 
-# Deployment steps:
-# 1. Push this repo to GitHub
-# 2. Go to https://pages.cloudflare.com
-# 3. Click "Create a project" and connect your GitHub repository
-# 4. Choose framework: "Next.js"
-# 5. Build settings:
-#    - Build command: npm run build
-#    - Build output directory: .next/standalone (or .next if using default)
-# 6. Click Deploy
-
-# Note: This project is a static Next.js site with NO API routes
-# Cloudflare Pages will automatically detect and build it correctly
+# For local development and builds only
+# Actual deployment happens via Cloudflare Pages web UI:
+# 1. Push to GitHub
+# 2. Connect repo at https://pages.cloudflare.com
+# 3. Build command: npm run build
+# 4. Output directory: .next
