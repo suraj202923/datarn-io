@@ -62,7 +62,7 @@ export class GitHubDiscussionsREST {
     });
 
     if (!response.ok) {
-      const error = await response.json().catch(() => ({}));
+      const error = (await response.json().catch(() => ({}))) as { message?: string };
       throw new Error(`GitHub API error: ${response.status} - ${error.message || response.statusText}`);
     }
 
