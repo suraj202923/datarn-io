@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "cf:build": "opennext build",
+    "deploy": "npm run cf:build && wrangler deploy",
+    "preview": "npm run cf:build && wrangler dev",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,6 +19,7 @@
   },
   "devDependencies": {
     "@opennextjs/cloudflare": "^1.0.0",
+    "wrangler": "^4.0.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
