@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
-import { AuthProvider } from '@/context/AuthContext'
 import '@/styles/globals.css'
 
 export const metadata: Metadata = {
@@ -22,13 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-white">
-        <AuthProvider>
-          <Navigation />
-          <main className="pt-16">
-            {children}
-          </main>
-          <Footer />
-        </AuthProvider>
+        <Navigation />
+        <main className="pt-16">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   )
