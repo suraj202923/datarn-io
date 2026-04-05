@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    unoptimized: true,
+    unoptimized: true, // ✅ keep this (Cloudflare doesn’t support Next image optimization)
   },
-  basePath: '',
   trailingSlash: true,
-}
 
-module.exports = nextConfig
+};
+
+module.exports = nextConfig;
