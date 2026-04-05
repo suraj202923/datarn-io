@@ -1,10 +1,2 @@
-name = "datarn-website"
-pages_build_output_dir = ".next"
+name = "datarn-io"
 compatibility_date = "2026-04-05"
-
-# For local development and builds only
-# Actual deployment happens via Cloudflare Pages web UI:
-# 1. Push to GitHub
-# 2. Connect repo at https://pages.cloudflare.com
-# 3. Build command: npm run build
-# 4. Output directory: .next
