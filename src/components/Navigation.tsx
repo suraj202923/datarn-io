@@ -39,14 +39,11 @@ export default function Navigation() {
           <Link href="/" className="text-slate-700 hover:text-teal-600 transition">
             Home
           </Link>
-          <Link href="/blog" className="text-slate-700 hover:text-teal-600 transition">
-            Blog
-          </Link>
           <Link href="/about" className="text-slate-700 hover:text-teal-600 transition">
             About
           </Link>
           <Link href="/products" className="text-slate-700 hover:text-teal-600 transition">
-            Products
+            Tools
           </Link>
           <Link href="/discussion" className="text-slate-700 hover:text-teal-600 transition">
             Discussion
@@ -74,14 +71,11 @@ export default function Navigation() {
             <Link href="/" className="block text-slate-700 hover:text-teal-600 transition">
               Home
             </Link>
-            <Link href="/blog" className="block text-slate-700 hover:text-teal-600 transition">
-              Blog
-            </Link>
             <Link href="/about" className="block text-slate-700 hover:text-teal-600 transition">
               About
             </Link>
             <Link href="/products" className="block text-slate-700 hover:text-teal-600 transition">
-              Products
+              Tools
             </Link>
             <Link href="/discussion" className="block text-slate-700 hover:text-teal-600 transition">
               Discussion

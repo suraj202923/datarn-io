@@ -73,13 +73,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-teal-400 transition">
-                  Blog
-                </Link>
-              </li>
-              <li>
                 <a href="https://github.com/datarn-io/docs" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
                   Documentation
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/112798364" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition">
+                  LinkedIn
                 </a>
               </li>
             </ul>
